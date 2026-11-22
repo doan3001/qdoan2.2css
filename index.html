@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2.2 - CSS Box Model Sản Phẩm</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #eef2f6;
+            padding: 40px;
+        }
+        .product-box {
+            width: 340px;
+            margin: 0 auto;
+            padding: 18px;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            background-color: #ffffff;
+        }
+        .product-thumb {
+            width: 100%;
+            height: 180px;
+            background-color: #dbeafe;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1d4ed8;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        .product-title {
+            font-size: 20px;
+            color: #0f172a;
+            margin: 0 0 8px 0;
+        }
+        .product-desc {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.5;
+            margin: 0 0 14px 0;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #dc2626;
+            padding: 8px 12px;
+            background-color: #fef2f2;
+            border-left: 4px solid #dc2626;
+            margin-bottom: 16px;
+        }
+        .btn-buy {
+            display: block;
+            width: 100%;
+            padding: 10px 16px;
+            background-color: #2563eb;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .btn-buy:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-box">
+        <div class="product-thumb">Hình ảnh sản phẩm</div>
+        <h2 class="product-title">Bàn Phím Cơ Không Dây</h2>
+        <p class="product-desc">Thiết kế gọn nhẹ, gõ êm tay, kết nối ổn định qua Bluetooth và USB Receiver, phù hợp lập trình và học tập.</p>
+        <div class="product-price">1.250.000đ</div>
+        <a href="#" class="btn-buy">Thêm vào giỏ hàng</a>
+    </div>
+</body>
+</html>
